@@ -1,0 +1,35 @@
+around. Forexaupie,f
+decde hat hefieldism bitsonahe seuence nmbcrs stut fromgo to 2"-L,am
+henareehAlmr
+ctuSrcason out hcrane of seauence numbers Wemecd.Assume wehaveuSedxas
+sequencc number; wc ony needto usex+I afterthat.There is no need iorY+ 2.T
+hox this.assumc hathe semderhas scmt hcframe numberedx Threethings carhappcn
+heframc arrives saf& aud sounma atthe receiver sie: he receiver semds am acknow
+edgment.1 he acknowlcdgmemtarrivesatthe sender site,causing he senderto
+thcnext frammenumbered）＋1
+2.Thcframcamivcs safcamd sounaattherceiver sirc: hc reccivcr scnds an acknow
+edgment, but the acknowledgmentiscormupeda or lost.Thesender resends hefra
+(numberedx)afcr tmhetime-out. Notethat heframehereisadupicate.Therecei
+can recognize this factbccause texpecrs framc X+  butfamexwasreceivea.
+.The framciscorrupted or neverarrives at muhercccivcr sic,tuhc scmdcrrescnds
+fame(
+fter hetime-ou
+Wc can sec uhat here is anecd for seauence mumbersx and x+i because the recei
+needs o distineuish betweem case 1 anacase2. Buu hereis no nccafor aframeto
+umbered.f+2.Incase l,hefamecar he mumberedagain becauscframesandc
+Ireacknowlcdecd andthercis noambinnity at eihersite.In cases2and3,hc mewfra
+sx+1.notx+2.fomlyyxamdx+1 arcneeded. we can lcty=0 mdx+1=1.1
+mcans thatthc sequcnccis0,1,0,10amd soon. Is thispater amiliar?Thisismodu
+rthmeticas we sawimChaper 10
+nuberS tm mumher hefames
+Ia So>-and -WaitARQweuse
+esequemce Bmmbers aIe haSed un nodusld-2arfthrnetca
+AcA成0&&e&NHbers
+Sincethe sequencenumbcrs mmustbc suiabefur bodataframes andACKfram
+usc this convention: Thc acknowledgment numbers always announce he seq
+umherof uhenextffrane expecea bv he rcccivec.Fur cxunpe,fframeOhas:
+sdfc and sound,thc receiver sends a ACK frame wih acknow]edgmemt l(m
+rame is expectedncxt) If frarme lhas arrived safe and soumd. uhe meceiver se
+ACKffamcwith acknowledgmentO(meaning frame 0is expected)
+InSepc:-WtAQ,uec:L.cslcdcrtt:ec>f sds站ser:nctrcesi
+tfregcewpected.

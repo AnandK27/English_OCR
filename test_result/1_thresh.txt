@@ -1,0 +1,25 @@
+R结dioWaves
+10ciear-cutdemarcation bctwec radio wavesand microwaves,cec-
+Aluhough there isnoclear-cut demarcation bctwec radiowaves andmicrowaveS,cec
+tromagnctic wavesrameinainfoauencie<{-wec 3kHcandGzarenormal calea
+IgdHie waves, waves rangingin frcauencies betwcc and 300GHzarecaea micr-
+wavcs. owcver,thc behavior of the waves.rather than thefrcquencies,is a better
+critcrionfor classificatio
+Radiowaves,for the most nart. are omnidirectionl.Whcm an antcnnatransmis
+Ttdo waves,Lhcy are propagated inal directons.This meanshat hc sendimg amd
+receiving antennas do not have to be aliuned.A sending antenna sends waves uhat cam
+bercccjived by any receivingantcnna.The omidirectional promerty hasadisadvantage,
+too,he radio waves tansmitted by onc antenna are susceptible to interferemee by
+anoLheramtenna that may send signalsusinghesame frequemcy r band.
+Radio Waves, particularly hosc waves uha propagae i he sky mode,can travci
+longdistances.This makes radio waves agood candidaefor lonedistance broadcaSt
+ingsuchasAMradio.
+Radiowaves, particulanly thoScoflowand medjum frequencies,can penetraiewallS.
+This characteristic ca be both an advanage and adisadvantagc.t isam advanags
+bccause,for example,a AMradiocan receive signasinsideabuilding.fisadis额adva-
+age beCauSe wWecannotjsoaeacommuicafiom to iugt insideor outside abuilding.Te
+radio wave bandis rclatively narrow iust under GHz commared to he microwac
+band. When hsbanisdivided into subbandshc snhbandsaalsO namT0W,leadimg04
+lov dataratefor digita] communicafioms.
+Alost the cntire band isregulated bvy au(horities(ea.heTCC inheUmteo
+States). Lsingamy partof he band requires permission fromthcauhories.

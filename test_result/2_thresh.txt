@@ -1,0 +1,22 @@
+communcaton.The scquencenumbers ofcrea ca wra around.For cxample,iwe
+decidethattheficldismbislonqhe eeharca rmHcrsstart from0,goto 2“-l,and
+thenarcrepeated
+LcL us rcasorout the rangeof seauence numMerc we need.Aesume wehave uSedaS
+a scquence number, wconly need to use+afie that.There is no neeaforx＋2.
+show this,assume hat the sender has semt he framc numberedc.Tree thingsca aPpcn
+I.Theframearrives safe and souna atherecceiver site: he receiver sendsam acknow-
+edgment.The acknowledgmentarives nt the scnder site.causinghc senderto sena
+themextframcnumberedJ＋I
+Thefame arrives safc and soundatuhereceiver site: thereceiver semds an acknow-
+edgment,buttheacknowledgment iscorruptedor lost. Thesenderresends heframe
+(mumbcredx)afterthetime-out.Notethat theframehereisadupcae.Thercceiver
+camnrecognize this factbecauseitexpects framex+1butframexwas received.
+Theframeiscormpted or ncverarrives at uhc rcceiver site,the sender resends he
+frame(numbered)aftcr thetime-out
+We camn sec thatthere is a need for sequemce numbers  and x+ l because the receiver
+meeds to distinguis bctweem case L and case 2.But thercis no needfor aframe to bc
+numberedx＋2.Lcasel,heframecarbenumberedcagain becauscframes andx+
+areacknowledgedamd hereisnoambiguity atcither site. I cases2ad 3.henewfram
+jsJ＋l,notx+2.Ifomlyjandr+Iareneeded. wecam letr=0 and)+1= l.Th
+means that theseauemceis0,1,0,10and soom.Isthis patem familiar? Thisismodulo-
+arithmcticas we saw imChaptcr 10.
