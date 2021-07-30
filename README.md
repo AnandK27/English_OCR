@@ -26,9 +26,9 @@ Detection is based on [CTPN](https://arxiv.org/abs/1609.03605). It is implemente
 - download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing)
 - put checkpoints_mlt/ in detector/text-detection-ctpn/
 
-***
-### Training
+### Train
 Train [CTPN](./detector/README.md) 
+***
 
 ## Recognition (CRNN)
 Recognition is based on [CRNN](http://arxiv.org/abs/1507.05717), some codes are borrowed from
@@ -42,6 +42,7 @@ and put these files into checkpoints.
 
 ### Train 
 Train [CRNN](./train_code/train_crnn/readme.md)  
+***
 
 # Test
 Place the test images in ./test_images<br>
