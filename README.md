@@ -1,7 +1,7 @@
 # English_OCR
    
-Text detection is based on CTPN and is done using tensorflow 
-Text recognition is based CRNN and is done using pytorch. 
+>Text detection is based on CTPN and is done using tensorflow 
+>Text recognition is based CRNN and is done using pytorch. 
 
 ## Prerequisite
 
