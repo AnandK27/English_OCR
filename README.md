@@ -27,7 +27,7 @@ Detection is based on [CTPN](https://arxiv.org/abs/1609.03605). It is implemente
 
 ***
 ### Training
-Train [CTPN](./detector/readme.md) 
+Train [CTPN](/detector/readme.md) 
 
 ## Recognition (CRNN)
 Recognition is based on [CRNN](http://arxiv.org/abs/1507.05717), some codes are borrowed from
