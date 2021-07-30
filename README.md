@@ -1,7 +1,8 @@
 # English_OCR
-   
-Text detection is based on CTPN and is done using tensorflow.
-Text recognition is based CRNN and is done using pytorch. 
+ 
+Dewarping done using [page_dewarp](https://github.com/mzucker/page_dewarp) <br>
+Text detection is based on CTPN and is done using tensorflow.<br>
+Text recognition is based CRNN and is done using pytorch. <br>
 
 ## Prerequisite
 
