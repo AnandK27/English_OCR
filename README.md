@@ -1,44 +1,36 @@
-## ocr.pytorch
-> A pure pytorch implemented ocr project.    
-Text detection is based CTPN and text recognition is based CRNN.  
-More detection and recognition methods will be supported!
+# English_OCR
+   
+Text detection is based on CTPN and is done using tensorflow 
+Text recognition is based CRNN and is done using pytorch. 
 
 ## Prerequisite
 
-- python-3.5+
-- pytorch-0.4.1+
-- torchvision-0.2.1
-- opencv-3.4.0.14
-- numpy-1.14.3
+- python
+- pytorch
+- torchvision
+- tensorflow
+- opencv
+- numpy
 
 
 They could all be installed through pip except pytorch and torchvision. As for pytorch and torchvision, 
 they both depends on your CUDA version, you would prefer to reading [pytorch's official site](https://pytorch.org/)
 
 
-## Detection
-Detection is based on [CTPN](https://arxiv.org/abs/1609.03605), some codes are borrowed from 
-[pytorch_ctpn](https://github.com/opconty/pytorch_ctpn), several detection results: 
-![detect1](test_result/t1.jpg)
-![detect2](test_result/t2.jpg)
+## Detection (CTPN)
+Detection is based on [CTPN](https://arxiv.org/abs/1609.03605). It is implemented in tensorflow. Also, the original code can be found in [here](https://github.com/eragonruan/text-detection-ctpn/tree/banjin-dev). 
 
-## text-detection-ctpn
 
-Scene text detection based on ctpn (connectionist text proposal network). It is implemented in tensorflow. The origin paper can be found [here](https://arxiv.org/abs/1609.03605). Also, the origin repo in caffe can be found in [here](https://github.com/tianzhi0549/CTPN). For more detail about the paper and code, see this [blog](http://slade-ruan.me/2017/10/22/text-detection-ctpn/). If you got any questions, check the issue first, if the problem persists, open a new issue.
-***
-**NOTICE: Thanks to [banjin-xjy](https://github.com/banjin-xjy), banjin and I have reonstructed this repo. The old repo was written based on Faster-RCNN, and remains tons of useless code and dependencies, make it hard to understand and maintain. Hence we reonstruct this repo. The old code is saved in [branch master](https://github.com/eragonruan/text-detection-ctpn/tree/master)**
-***
+### Setup
+- download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing)
+- put checkpoints_mlt/ in detector/text-detection-ctpn/
 
-### demo
-- follow setup to build the library 
-- download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1BNHt_9fiqRPGmEXPaxaFXw)
-- put checkpoints_mlt/ in text-detection-ctpn/
-- put your images in data/demo, the results will be saved in data/res, and run demo in the root 
 ```shell
 python ./main/demo.py
 ```
 ***
 ### training
+Train [CTPN](./detector/readme.md) 
 #### prepare data
 - First, download the pre-trained model of VGG net and put it in data/vgg_16.ckpt. you can download it from [tensorflow/models](https://github.com/tensorflow/models/tree/1af55e018eebce03fb61bba9959a04672536107d/research/slim)
 - Second, download the dataset we prepared from [google drive](https://drive.google.com/file/d/1npxA_pcEvIa4c42rho1HgnfJ7tamThSy/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1nbbCZwlHdgAI20_P9uw9LQ). put the downloaded data in data/dataset/mlt, then start the training.
@@ -60,25 +52,23 @@ python ./main/train.py
 - The model provided in checkpoints_mlt is trained on GTX1070 for 50k iters. It takes about 0.25s per iter. So it will takes about 3.5 hours to finished 50k iterations.
 ***
 
-### Recognition
+## Recognition (CRNN)
 Recognition is based on [CRNN](http://arxiv.org/abs/1507.05717), some codes are borrowed from
 [crnn.pytorch](https://github.com/meijieru/crnn.pytorch)
 
-### Test
-Download pretrained models from [Baidu Netdisk](https://pan.baidu.com/s/1yllO9hBF8TgChHJ7i3WobA) (extract code: u2ff) or [Google Driver](https://drive.google.com/open?id=1hRr9v9ky4VGygToFjLD9Cd-9xan43qID)
+### Setup
+
+Download pretrained models from [Baidu Netdisk](https://pan.baidu.com/s/1yllO9hBF8TgChHJ7i3WobA) (extract code: u2ff) or [Google Drive](https://drive.google.com/open?id=1hRr9v9ky4VGygToFjLD9Cd-9xan43qID)
 and put these files into checkpoints.
-Then run
->python3 demo.py
 
-The image files in ./test_images will be tested for text detection and recognition, the results will be stored in ./test_result.
 
-If you want to test a single image, run
->python3 test_one.py [filename]
-
-### Train
-Training codes are placed into train_code directory.  
-Train [CTPN](./train_code/train_ctpn/readme.md)  
+### Train 
 Train [CRNN](./train_code/train_crnn/readme.md)  
 
-### Licence
-[MIT License](https://opensource.org/licenses/MIT)
+## Test
+Place the test images in ./test_images
+To test the data run the script file "run.sh"
+```shell
+./run.sh
+```
+The text file will be generated in ./test_result
