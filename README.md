@@ -16,26 +16,20 @@ They could all be installed through pip except pytorch and torchvision. As for p
 they both depends on your CUDA version, you would prefer to reading [pytorch's official site](https://pytorch.org/)
 
 
-### Detection
+## Detection
 Detection is based on [CTPN](https://arxiv.org/abs/1609.03605), some codes are borrowed from 
 [pytorch_ctpn](https://github.com/opconty/pytorch_ctpn), several detection results: 
 ![detect1](test_result/t1.jpg)
 ![detect2](test_result/t2.jpg)
 
-# text-detection-ctpn
+## text-detection-ctpn
 
 Scene text detection based on ctpn (connectionist text proposal network). It is implemented in tensorflow. The origin paper can be found [here](https://arxiv.org/abs/1609.03605). Also, the origin repo in caffe can be found in [here](https://github.com/tianzhi0549/CTPN). For more detail about the paper and code, see this [blog](http://slade-ruan.me/2017/10/22/text-detection-ctpn/). If you got any questions, check the issue first, if the problem persists, open a new issue.
 ***
 **NOTICE: Thanks to [banjin-xjy](https://github.com/banjin-xjy), banjin and I have reonstructed this repo. The old repo was written based on Faster-RCNN, and remains tons of useless code and dependencies, make it hard to understand and maintain. Hence we reonstruct this repo. The old code is saved in [branch master](https://github.com/eragonruan/text-detection-ctpn/tree/master)**
 ***
-# roadmap
-- [x] reonstruct the repo
-- [x] cython nms and bbox utils
-- [x] loss function as referred in paper
-- [x] oriented text connector
-- [x] BLSTM
-***
-# setup
+
+### setup
 nms and bbox utils are written in cython, hence you have to build the library first.
 ```shell
 cd utils/bbox
@@ -44,7 +38,7 @@ chmod +x make.sh
 ```
 It will generate a nms.so and a bbox.so in current folder.
 ***
-# demo
+### demo
 - follow setup to build the library 
 - download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1BNHt_9fiqRPGmEXPaxaFXw)
 - put checkpoints_mlt/ in text-detection-ctpn/
@@ -53,8 +47,8 @@ It will generate a nms.so and a bbox.so in current folder.
 python ./main/demo.py
 ```
 ***
-# training
-## prepare data
+### training
+#### prepare data
 - First, download the pre-trained model of VGG net and put it in data/vgg_16.ckpt. you can download it from [tensorflow/models](https://github.com/tensorflow/models/tree/1af55e018eebce03fb61bba9959a04672536107d/research/slim)
 - Second, download the dataset we prepared from [google drive](https://drive.google.com/file/d/1npxA_pcEvIa4c42rho1HgnfJ7tamThSy/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1nbbCZwlHdgAI20_P9uw9LQ). put the downloaded data in data/dataset/mlt, then start the training.
 - Also, you can prepare your own dataset according to the following steps. 
@@ -67,7 +61,7 @@ python ./utils/prepare/split_label.py
 <img src="/data/readme/demo_split.png" width=640 height=480 />
 
 ***
-## train 
+### train 
 Simplely run
 ```shell
 python ./main/train.py
