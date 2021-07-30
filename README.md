@@ -43,9 +43,9 @@ and put these files into checkpoints.
 ### Train 
 Train [CRNN](./train_code/train_crnn/readme.md)  
 
-## Test
-Place the test images in ./test_images
-To test the data run the script file "run.sh"
+# Test
+Place the test images in ./test_images<br>
+To test the data run the script file "run.sh"<br>
 ```shell
 ./run.sh
 ```
