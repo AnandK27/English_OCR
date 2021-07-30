@@ -29,15 +29,6 @@ Scene text detection based on ctpn (connectionist text proposal network). It is 
 **NOTICE: Thanks to [banjin-xjy](https://github.com/banjin-xjy), banjin and I have reonstructed this repo. The old repo was written based on Faster-RCNN, and remains tons of useless code and dependencies, make it hard to understand and maintain. Hence we reonstruct this repo. The old code is saved in [branch master](https://github.com/eragonruan/text-detection-ctpn/tree/master)**
 ***
 
-### setup
-nms and bbox utils are written in cython, hence you have to build the library first.
-```shell
-cd utils/bbox
-chmod +x make.sh
-./make.sh
-```
-It will generate a nms.so and a bbox.so in current folder.
-***
 ### demo
 - follow setup to build the library 
 - download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1BNHt_9fiqRPGmEXPaxaFXw)
