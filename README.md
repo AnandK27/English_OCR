@@ -45,7 +45,7 @@ Train [CRNN](./train_code/train_crnn/readme.md)
 ***
 
 # Test
-Place the test images in ./test_images<br>
+Place the test images in ./page_dewarp/example_input<br>
 To test the data run the script file "run.sh"<br>
 ```shell
 ./run.sh
